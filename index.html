@@ -57,7 +57,8 @@ function button(x){
       
         // e.preventDefault(x);
     //    console.log('btn click',apistore[x]);
-      
+      let mainparent = document.getElementById('display');
+      mainparent.innerHTML = ''
     let trnsobj = apistore[x];
     for(let i = 0 ; i< trnsobj.length; i++){
         console.log(trnsobj[i]);
@@ -81,8 +82,6 @@ function button(x){
   </div>
     `
    
-    let mainparent = document.getElementById('display');
-    
     mainparent.append(Cardparent);
 
 
@@ -91,7 +90,7 @@ function button(x){
     };
  
     var container = document.getElementById('container');
-    container.appendChild(button);
+    container.append(button)
 }
 
 
